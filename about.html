@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - GovSeries</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">GOVSERIES</div>
+            <img src="image (7).png" alt="GovSeries Logo" class="logo-image">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
@@ -47,7 +47,7 @@
     
     <footer>
         <p>Follow us on LinkedIn</p>
-        <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+        <a href="#"><img src="LinkedIn_logo_initials.webp" alt="LinkedIn"></a>
         <p>Contact us: info@govseries.org | 240 328 0514</p>
     </footer>
 </body>
@@ -60,11 +60,33 @@
         padding: 0;
         background-color: #f4f4f4;
     }
-    header {
-        background: #003366;
+    a{
+        text-decoration: none;
         color: white;
-        padding: 15px 0;
-        text-align: center;
+        padding: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        color:white;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        color: #f4f4f4;
+    }
+    nav img{
+        scale: 0.5;
+    }
+    header {
+        background: #000000;
+        color: white;
+        
+        
     }
     .about {
         padding: 50px;
@@ -87,5 +109,9 @@
         background: #003366;
         color: white;
         margin-top: 20px;
+    }
+    footer img{
+        width: 50px;
+        height: 50px;
     }
 </style>
