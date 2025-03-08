@@ -3,61 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starter Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <title>GovSeries - Get Invited</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-cover bg-center h-screen" style="background-image: url('background.jpg');">
+<body>
+    <header>
+        <nav>
+            <div class="logo">GOVSERIES</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <!-- Homepage -->
-    <div class="flex flex-col items-center justify-center h-screen text-white text-center px-4">
-        <img src="logo.png" alt="Logo" class="w-40 mb-6">
-        
-        <div class="bg-white p-6 rounded-lg shadow-md text-black w-full max-w-md">
-            <h2 class="text-2xl font-bold mb-4">Get Invited</h2>
-            <form>
-                <input type="text" placeholder="Name" class="w-full p-2 border rounded mb-2">
-                <input type="text" placeholder="Organization" class="w-full p-2 border rounded mb-2">
-                <input type="text" placeholder="Title" class="w-full p-2 border rounded mb-2">
-                <input type="email" placeholder="Email" class="w-full p-2 border rounded mb-2">
-                <input type="text" placeholder="State" class="w-full p-2 border rounded mb-2">
-                <button class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="GovSeries Logo" class="logo-image">
+            <h1>Get Invited</h1>
+            <form id="invite-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="organization" placeholder="Organization" required>
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="state" placeholder="State" required>
+                <button type="submit">Submit</button>
             </form>
         </div>
-    </div>
+    </section>
     
-    <div class="absolute bottom-5 right-5 flex items-center space-x-2">
-        <p class="text-white">Follow us on LinkedIn</p>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn" class="w-6"></a>
-    </div>
-
-    <!-- About Us Page -->
-    <div class="hidden" id="about">
-        <div class="container mx-auto p-6">
-            <h1 class="text-3xl font-bold text-center mb-4">Capabilities Statement</h1>
-            <p class="text-gray-700">
-                <strong>Mission:</strong> GOVSERIES is a trade initiative focused on providing information, access, opportunity,
-                and valuable connections in the government contracts community through virtual and in-person webinars,
-                seminars, expos, conferences, and other events.
-            </p>
-            <h2 class="text-2xl font-bold mt-4">Government Contract Sectors</h2>
-            <ul class="list-disc pl-5 text-gray-700">
-                <li>Professional Services</li>
-                <li>Information Technology</li>
-                <li>Design & Construction</li>
-                <li>Transportation, Logistics, Supply</li>
-            </ul>
-            <h2 class="text-2xl font-bold mt-4">Our Services</h2>
-            <p class="text-gray-700"><strong>Webinars & Training Seminars:</strong> We provide access to training by Subject Matter Experts on all functional areas of government contracts.</p>
-            <p class="text-gray-700"><strong>Summits & Conferences:</strong> We provide access to industry intel, hot topics, and insights from esteemed panelists, along with elite networking and matchmaking opportunities.</p>
-            <p class="text-gray-700"><strong>Connections:</strong> We offer access to an elite network of government contracts business owners, executives, subject matter experts, government officials, and procurement professionals.</p>
-            <p class="text-gray-700"><strong>Partnerships & Promotions:</strong> Need help maximizing attendance at a Government Contracts Event? Our marketing capacity can assist you!</p>
-            <h2 class="text-2xl font-bold mt-4">Value Statement</h2>
-            <p class="text-gray-700 font-bold">YOUR VISION IS OUR MISSION. BRING US YOUR AMBITION & PUT US TO WORK FOR YOU!</p>
-            <p class="text-gray-700 mt-4">GOVSERIES welcomes indications of interest and ideas for event space, channel partners, volunteers, vendors, sponsors, topics, government speakers, featured guests from government agencies, and presenters.</p>
-            <p class="text-gray-700 mt-4 font-bold">Follow Us: <img src="linkedin.png" alt="LinkedIn" class="inline w-6"></p>
-            <p class="text-gray-700 text-sm mt-2">1531 Rockville Pike, Ste 1039, Rockville, Maryland, 20852 | 240 328 0514 | info@govseries.org</p>
-        </div>
-    </div>
+    <footer>
+        <p>Follow us on LinkedIn</p>
+        <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: url('background.jpg') no-repeat center center/cover;
+        color: white;
+        text-align: center;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .hero-content img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+    }
+
+    input, button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    button {
+        background: #0073b1;
+        color: white;
+        cursor: pointer;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer img {
+        width: 30px;
+        margin-top: 10px;
+    }
+</style>
