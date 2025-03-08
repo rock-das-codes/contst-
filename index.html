@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="bg-cover bg-center h-screen" style="background-image: url('background.jpg');">
+    
+    <!-- Homepage -->
+    <div class="flex flex-col items-center justify-center h-screen text-white text-center px-4">
+        <img src="logo.png" alt="Logo" class="w-40 mb-6">
+        
+        <div class="bg-white p-6 rounded-lg shadow-md text-black w-full max-w-md">
+            <h2 class="text-2xl font-bold mb-4">Get Invited</h2>
+            <form>
+                <input type="text" placeholder="Name" class="w-full p-2 border rounded mb-2">
+                <input type="text" placeholder="Organization" class="w-full p-2 border rounded mb-2">
+                <input type="text" placeholder="Title" class="w-full p-2 border rounded mb-2">
+                <input type="email" placeholder="Email" class="w-full p-2 border rounded mb-2">
+                <input type="text" placeholder="State" class="w-full p-2 border rounded mb-2">
+                <button class="w-full bg-blue-600 text-white p-2 rounded">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="absolute bottom-5 right-5 flex items-center space-x-2">
+        <p class="text-white">Follow us on LinkedIn</p>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn" class="w-6"></a>
+    </div>
+
+    <!-- About Us Page -->
+    <div class="hidden" id="about">
+        <div class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold text-center mb-4">Capabilities Statement</h1>
+            <p class="text-gray-700">
+                <strong>Mission:</strong> GOVSERIES is a trade initiative focused on providing information, access, opportunity,
+                and valuable connections in the government contracts community through virtual and in-person webinars,
+                seminars, expos, conferences, and other events.
+            </p>
+            <h2 class="text-2xl font-bold mt-4">Government Contract Sectors</h2>
+            <ul class="list-disc pl-5 text-gray-700">
+                <li>Professional Services</li>
+                <li>Information Technology</li>
+                <li>Design & Construction</li>
+                <li>Transportation, Logistics, Supply</li>
+            </ul>
+            <h2 class="text-2xl font-bold mt-4">Our Services</h2>
+            <p class="text-gray-700"><strong>Webinars & Training Seminars:</strong> We provide access to training by Subject Matter Experts on all functional areas of government contracts.</p>
+            <p class="text-gray-700"><strong>Summits & Conferences:</strong> We provide access to industry intel, hot topics, and insights from esteemed panelists, along with elite networking and matchmaking opportunities.</p>
+            <p class="text-gray-700"><strong>Connections:</strong> We offer access to an elite network of government contracts business owners, executives, subject matter experts, government officials, and procurement professionals.</p>
+            <p class="text-gray-700"><strong>Partnerships & Promotions:</strong> Need help maximizing attendance at a Government Contracts Event? Our marketing capacity can assist you!</p>
+            <h2 class="text-2xl font-bold mt-4">Value Statement</h2>
+            <p class="text-gray-700 font-bold">YOUR VISION IS OUR MISSION. BRING US YOUR AMBITION & PUT US TO WORK FOR YOU!</p>
+            <p class="text-gray-700 mt-4">GOVSERIES welcomes indications of interest and ideas for event space, channel partners, volunteers, vendors, sponsors, topics, government speakers, featured guests from government agencies, and presenters.</p>
+            <p class="text-gray-700 mt-4 font-bold">Follow Us: <img src="linkedin.png" alt="LinkedIn" class="inline w-6"></p>
+            <p class="text-gray-700 text-sm mt-2">1531 Rockville Pike, Ste 1039, Rockville, Maryland, 20852 | 240 328 0514 | info@govseries.org</p>
+        </div>
+    </div>
+</body>
+</html>
